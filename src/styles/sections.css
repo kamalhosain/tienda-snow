@@ -43,3 +43,15 @@
 .box-img:nth-child(3) {
     grid-column-start: span 3;
 }
+
+.box-img:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.box-img:nth-child(5) {
+    grid-column-start: span 2;
+}
+
+.box-img:nth-child(6) {
+    grid-column-start: span 2;
+}
