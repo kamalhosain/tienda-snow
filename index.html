@@ -87,11 +87,26 @@
                     </div>
                 </a>
             </div>
+
+
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Tienda en Línea</p>
     </footer>
+    <script src="src/scripts/script.js"></script>
+    <script>
+        let productoEjemplo = new Product(
+            "Producto Ejemplo",
+            100,
+            "Este es un producto genérico para ejemplificar.",
+            "src/img/sections/shirts.jpg"
+        )
+
+        const productoHTML = productoEjemplo.createProductHTML()
+
+        document.querySelector('main').appendChild(productoHTML)
+    </script>
 </body>
 </html>
