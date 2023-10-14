@@ -48,3 +48,9 @@
     border-radius: 5px;
     font-size: 16px;
 }
+
+@media screen and (max-width: 820px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
