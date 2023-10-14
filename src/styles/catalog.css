@@ -51,6 +51,13 @@
 
 @media screen and (max-width: 820px) {
     .catalog {
+        width: 90%;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .catalog {
+        grid-template-columns: 1fr;
     }
 }
