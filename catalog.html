@@ -17,11 +17,14 @@
 <body>
     <header class="header">
         <div class="navbar">
+            <div class="hamburger-btn-cont">
+                <button id="hamburgerBtn"><i class="fa-solid fa-bars"></i></button>
+            </div>
             <nav class="nav">
                 <ul class="nav-links text-kanit">
                     <li><a class="nav-link" href="index.html">INICIO</a></li>
                     <li><a class="nav-link" href="catalog.html">CATÁLOGO</a></li>
-                    <li><a id="seeCart" class="nav-link" href="cart.html">🛒</a></li>
+                    <li><a class="nav-link" href="form.html">CONTACTO</a></li>
                 </ul>
             </nav>
             <a href="index.html" class="logo">
@@ -29,9 +32,7 @@
             </a>
             <div class="menu">
                 <ul class="menu-buttons">
-                    <li class="menu-button"><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li class="menu-button"><i class="fa-regular fa-heart"></i></li>
-                    <li class="menu-button"><i class="fa-solid fa-bag-shopping"></i></li>
+                    <a id="seeCart" href="cart.html"><li class="menu-button"><i class="fa-solid fa-cart-shopping"></i></li></a>
                 </ul>
             </div>
         </div>
@@ -50,6 +51,6 @@
     </footer>
 
     <script src="src/scripts/app.js"></script>
-
+    <script src="src/scripts/header.js"></script>
 </body>
 </html>
