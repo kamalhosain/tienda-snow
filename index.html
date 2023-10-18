@@ -21,7 +21,7 @@
                 <ul class="nav-links text-kanit">
                     <li><a class="nav-link" href="index.html">INICIO</a></li>
                     <li><a class="nav-link" href="catalog.html">CATÁLOGO</a></li>
-                    <li><a class="nav-link" href="cart.html">CARRITO</a></li>
+                    <li><a id="seeCart" class="nav-link" href="cart.html">🛒</a></li>
                 </ul>
             </nav>
             <div class="logo">
@@ -87,26 +87,12 @@
                     </div>
                 </a>
             </div>
-
-
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Tienda en Línea</p>
     </footer>
-    <script src="src/scripts/script.js"></script>
-    <script>
-        let productoEjemplo = new Product(
-            "Producto Ejemplo",
-            100,
-            "Este es un producto genérico para ejemplificar.",
-            "src/img/sections/shirts.jpg"
-        )
-
-        const productoHTML = productoEjemplo.createProductHTML()
-
-        document.querySelector('main').appendChild(productoHTML)
-    </script>
+    <script src="src/scripts/app.js"></script>
 </body>
 </html>
