@@ -38,52 +38,43 @@
     </header>
 
     <main>
-        <section class="cart-items">
-            <!-- Lista de productos en el carrito -->
-        </section>
-
-        <section class="cart-summary">
-            <!-- Resumen del carrito -->
-            <p>Total: $0.00</p>
-            <button>Realizar pedido</button>
-        </section>
-
-
+        <div class="Contacto">
+            <h1>Formulario de registro</h1>
+        <p class="col-s-12">Usaremos tus datos para informarte sobre la entrega.</p>
+    
+    
+        <form id="formulario" onsubmit=" return validarFormulario()">
+            <label for="inputNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre" required>
+            
+            <label for="inputApellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su Apellido" required>
+            
+            <label for="dni">DNI:</label>
+            <input type="number" class="form-control" name="dni" id="dni" placeholder="DNI sin puntos" length=8 pattern=[0-9] required> 
+            
+            <label for="inputDomicilio" class="form-label">Domicilio</label>
+            <input type="text" class="form-control" id="inputDomicilio" placeholder="25 de Mayo 1520" required>
+            
+            <label for="inputProvincia" class="form-label">Provincia</label>
+            <input type="text" class="form-control" id="inputProvincia" placeholder="Buenos Aires" required>
+            
+            <label for="inputLocalidad" class="form-label">Localidad</label>
+            <input type="text" class="form-control" id="inputLocalidad" placeholder="Palermo" required>
+            
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="mail@mail.com" required>
+            
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" required>
+            
+            <input type="submit" value="Enviar">
+        </form>
     </main>
 
     <div class="Contacto">
         <h1>Formulario de registro</h1>
     <p class="col-s-12">Usaremos tus datos para informarte sobre la entrega.</p>
-
-
-    <form id="formulario" onsubmit=" return validarFormulario()">
-        <label for="inputNombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre" required>
-        
-        <label for="inputApellido" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su Apellido" required>
-        
-        <label for="dni">DNI:</label>
-        <input type="number" class="form-control" name="dni" id="dni" placeholder="DNI sin puntos" length=8 pattern=[0-9] required> 
-        
-        <label for="inputDomicilio" class="form-label">Domicilio</label>
-        <input type="text" class="form-control" id="inputDomicilio" placeholder="25 de Mayo 1520" required>
-        
-        <label for="inputProvincia" class="form-label">Provincia</label>
-        <input type="text" class="form-control" id="inputProvincia" placeholder="Buenos Aires" required>
-        
-        <label for="inputLocalidad" class="form-label">Localidad</label>
-        <input type="text" class="form-control" id="inputLocalidad" placeholder="Palermo" required>
-        
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="mail@mail.com" required>
-        
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" required>
-        
-        <input type="submit" value="Enviar">
-
-    </form>
 
            <script src="js/validacionFormulario.js"></script>
 
