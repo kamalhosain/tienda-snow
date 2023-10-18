@@ -36,5 +36,8 @@ PUBLICACIÓN Y GIT:
 DISEÑO INTEGRAL DEL PROYECTO:
     -Paleta de colores: https://coolors.co/palette/0d1321-1d2d44-3e5c76-748cab-f0ebd8
     -Fuentes utilizadas: Young Serif, Roboto y Kanit
+    -Imágenes sin licencia obtenidas de Unsplash
+    -Imágenes comprimidas y redimensionadas con iloveimg.com
+    -Carga de imágenes optimizada con "Lazy Loading"
 
 DOCUMENTACIÓN:
