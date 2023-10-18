@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    margin: 20px 0;
+    padding: 1%;
 }
 
 .product-card {
@@ -22,7 +22,7 @@
 }
 
 .product-card:hover .product-img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .product-info {
@@ -30,7 +30,7 @@
 }
 
 .product-img {
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .product-name {
@@ -44,6 +44,7 @@
 .add-to-cart-btn {
     color: white;
     background-color: var(--color-black);
+    margin: 5px 10px;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
