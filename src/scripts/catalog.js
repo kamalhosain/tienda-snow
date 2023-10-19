@@ -1,7 +1,8 @@
 const catalogContent = document.getElementById("catalogContent");
 const seeCart = document.getElementById("seeCart");
 
-let cart = []
+console.log(sessionStorage.getItem("cart"))
+let cart = (sessionStorage.getItem("cart") == null) ? [] : JSON.parse(sessionStorage.getItem("cart"))
 
 function getProducts(done) {
     const results = fetch('https://productos-tienda-b9e14-default-rtdb.firebaseio.com/productos.json');
@@ -36,17 +37,8 @@ getProducts(json => {
         content.append(buttonAddToCart);
 
         buttonAddToCart.addEventListener("click", () => {
-            cart.push({
-                id: json[i].id,
-                name: json[i].name,
-                value: json[i].value,
-                image: json[i].image
+            cart.push(json[i]);
+            sessionStorage.setItem("cart",JSON.stringify(cart));
         });
-    });
     }
-    
 })
-
-seeCart.addEventListener("click", () => {
-    sessionStorage.setItem("cart",JSON.stringify(cart));
-});

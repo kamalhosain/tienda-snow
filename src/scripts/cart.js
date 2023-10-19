@@ -12,7 +12,7 @@ cart.forEach((product) => {
             </figure>
             <div class="product-info">
                 <h3 class="product-name text-kanit">${product.name}</h3>
-                <p class="product-price text-roboto">${"$"+product.value}</p>
+                <p class="product-price text-roboto">${"$"+product.price}</p>
             </div>
         </div>
     `;
