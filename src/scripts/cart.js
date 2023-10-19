@@ -6,9 +6,9 @@ cart.forEach((product) => {
     let content = document.createElement("div");
     content.className = "product-card";
     content.innerHTML = `
-        <div class="product-card">
+        <div class="product-card animate__animated animate__fadeIn">
             <figure class="product-figure">
-                <img class="product-img" src=${product.image} alt=${product.description}>
+                <img loading="lazy" class="product-img" src=${product.image} alt=${product.description}>
             </figure>
             <div class="product-info">
                 <h3 class="product-name text-kanit">${product.name}</h3>
@@ -26,7 +26,7 @@ cart.forEach((product) => {
     content.append(buttonRemoveFromCart);
     
     buttonRemoveFromCart.addEventListener("click", () => {
-        cart = cart.filter(item => item.name != product.name);
+        cart.splice(cart.indexOf(product), 1);
         sessionStorage.setItem("cart",JSON.stringify(cart));
         location.reload();
     });
