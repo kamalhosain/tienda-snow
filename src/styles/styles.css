@@ -24,3 +24,16 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* Scroll personalizado */
+
+body::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border-right: 1px solid var(--color-white);
+    border-left: 1px solid var(--color-white);
+}
