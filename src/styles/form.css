@@ -1,3 +1,48 @@
+.contact {
+    display: flex;
+    gap: 30px;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 90vw;
+    }
+}
+
+.delivery {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.delivery-option {
+    font-size: 2em;
+    color: var(--color-blue);
+}
+
+.delivery-description {
+    font-size: 1.5em;
+    color: var(--color-blue);
+}
+
+.contact-map {
+    text-align: center;
+}
+
+.map-div {
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.map {
+    border-radius: 10px;
+}
+
 form {
     max-width: 400px;
     margin: 0 auto;

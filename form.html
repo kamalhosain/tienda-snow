@@ -44,43 +44,57 @@
     <div class="header-shape"></div> <!-- Este div evita que el header se superponga a los primeros píxeles de contenido -->
 
     <main>
-        <div class="Contacto animate__animated animate__fadeIn">
-            <h1>Formulario de registro</h1>
-        <p class="col-s-12">Usaremos tus datos para informarte sobre la entrega.</p>
-    
-    
-        <form id="formulario" onsubmit=" return validarFormulario()">
-            <label for="inputNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre" required>
-            
-            <label for="inputApellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su Apellido" required>
-            
-            <label for="dni">DNI:</label>
-            <input type="number" class="form-control" name="dni" id="dni" placeholder="DNI sin puntos" length=8 pattern=[0-9] required> 
-            
-            <label for="inputDomicilio" class="form-label">Domicilio</label>
-            <input type="text" class="form-control" id="inputDomicilio" placeholder="25 de Mayo 1520" required>
-            
-            <label for="inputProvincia" class="form-label">Provincia</label>
-            <input type="text" class="form-control" id="inputProvincia" placeholder="Buenos Aires" required>
-            
-            <label for="inputLocalidad" class="form-label">Localidad</label>
-            <input type="text" class="form-control" id="inputLocalidad" placeholder="Palermo" required>
-            
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="mail@mail.com" required>
-            
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" required>
-            
-            <input type="submit" value="Enviar">
-        </form>
-    </main>
+        <h2 class="page-title text-kanit">
+            Entrega de productos
+        </h2>
+        <div class="contact animate__animated animate__fadeIn">
+            <div class="contact-form">
+                <div class="delivery">
+                    <h2 class="delivery-option text-kanit">Entrega con envío</h2>
+                    <p class="delivery-description text-roboto">Para recibir tu producto en casa, completá el formulario:</p>
+                </div>
+        
+                <form id="formulario" onsubmit=" return validarFormulario()">
+                    <label for="inputNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre" required>
+                    
+                    <label for="inputApellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su Apellido" required>
+                    
+                    <label for="dni">DNI:</label>
+                    <input type="number" class="form-control" name="dni" id="dni" placeholder="DNI sin puntos" length=8 pattern=[0-9] required> 
+                    
+                    <label for="inputDomicilio" class="form-label">Domicilio</label>
+                    <input type="text" class="form-control" id="inputDomicilio" placeholder="25 de Mayo 1520" required>
+                    
+                    <label for="inputProvincia" class="form-label">Provincia</label>
+                    <input type="text" class="form-control" id="inputProvincia" placeholder="Buenos Aires" required>
+                    
+                    <label for="inputLocalidad" class="form-label">Localidad</label>
+                    <input type="text" class="form-control" id="inputLocalidad" placeholder="Palermo" required>
+                    
+                        <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="mail@mail.com" required>
+                    
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" required>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
 
-    <div class="Contacto">
-        <h1>Formulario de registro</h1>
-    <p class="col-s-12">Usaremos tus datos para informarte sobre la entrega.</p>
+            <div class="contact-map">
+                <div class="delivery">
+                    <h2 class="delivery-option text-kanit">Entrega en local</h2>
+                    <p class="delivery-description text-roboto">Si elegiste retiro presencial, podés encontrarnos en:</p>
+                </div>
+                <div class="map-div">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13151.097558586303!2d-58.5231694!3d-34.5086035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ee292497e9%3A0xf9a611e58747f528!2sUnicenter!5e0!3m2!1ses!2sar!4v1697822007759!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </main>
 
            <script src="src/scripts/form.js"></script>
            <script src="src/scripts/header.js"></script>
