@@ -36,6 +36,9 @@
 
 .product-name {
     font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-price {
@@ -62,5 +65,144 @@
 @media screen and (max-width: 500px) {
     .catalog {
         grid-template-columns: 1fr;
+    }
+}
+
+.pop-up-filter {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .85);
+    z-index: 10;
+    top: 0;
+    display: none;
+}
+
+.add-pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 800px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    display: none;
+}
+
+.added-msg {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.added-product {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.added-product img {
+    height: 80%;
+    border: 1px solid var(--color-black);
+    margin: 10px;
+}
+
+.added-product-info {
+    margin: 10px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.added-product-name {
+    font-size: 24px;
+}
+
+.added-product-category {
+    font-size: 24px;
+    color: var(--color-blue);
+}
+
+.added-product-description {
+    font-size: 10px;
+}
+
+.added-product-price {
+    font-size: 24px;
+}
+
+.continue-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.continue-button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: var(--color-black);
+    color: white;
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+    width: 40%;
+    padding: 5px;
+    transition: 0.2s;
+    margin: 5px;
+}
+
+.continue-button:hover {
+    background-color: var(--color-dark-blue);
+}
+
+@media screen and (max-width: 1100px) {
+    .add-pop-up {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .add-pop-up {
+        height: auto;
+    }
+
+    .added-product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .added-product img {
+        width: 60%;
+        height: auto;
+    }
+
+    .added-product-info {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .added-product-description {
+        display: none;
+    }
+
+    .continue-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .continue-button {
+        width: 85%;
     }
 }
