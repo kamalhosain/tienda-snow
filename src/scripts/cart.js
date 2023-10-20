@@ -2,6 +2,18 @@ const cartContent = document.getElementById("cartContent");
 
 let cart = JSON.parse(sessionStorage.getItem("cart"));
 
+const totalAmount = document.getElementById('totalAmount')
+
+const updateAmount = () => {
+    let sum = 0;
+    for (let product of cart) {
+        sum += product.price;
+    }
+    totalAmount.innerText = "Precio total: $" + sum;
+}
+
+updateAmount();
+
 cart.forEach((product) => {
     let content = document.createElement("div");
     content.className = "product-card";
@@ -28,6 +40,7 @@ cart.forEach((product) => {
     buttonRemoveFromCart.addEventListener("click", () => {
         cart.splice(cart.indexOf(product), 1);
         sessionStorage.setItem("cart",JSON.stringify(cart));
+        updateAmount();
         location.reload();
     });
      
