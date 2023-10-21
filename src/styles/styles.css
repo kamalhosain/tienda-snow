@@ -4,6 +4,7 @@
 @import url(gallery.css);
 @import url(catalog.css);
 @import url(form.css);
+@import url(footer.css);
 
 /* Estilos generales */
 body {
@@ -19,16 +20,6 @@ main {
     flex-wrap: wrap;
     align-items: center;
     overflow-x: hidden;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Scroll personalizado */
