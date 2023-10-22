@@ -77,8 +77,8 @@ getProducts(json => {
                 addPopUpFilter.style.display = "none";
             })
 
-            addPopUp.style.display = "initial";
-            addPopUpFilter.style.display = "initial";
+            addPopUp.style.display = "flex";
+            addPopUpFilter.style.display = "flex";
         });
     }
 })

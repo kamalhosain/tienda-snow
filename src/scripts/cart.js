@@ -2,13 +2,18 @@ const cartContent = document.getElementById("cartContent");
 
 let cart = JSON.parse(sessionStorage.getItem("cart"));
 
-const totalAmount = document.getElementById('totalAmount')
+const totalAmount = document.getElementById('totalAmount');
+
+const buyButton = document.getElementById('buyButton');
+
+const buyPopUp = document.getElementById("buyPopUp");
+const buyPopUpFilter = document.getElementById("buyPopUpFilter");
 
 const updateAmount = () => {
     let sum = 0;
     for (let product of cart) {
         sum += product.price;
-    }
+    };
     totalAmount.innerText = "Precio total: $" + sum;
 }
 
@@ -45,3 +50,9 @@ cart.forEach((product) => {
     });
      
 });
+
+buyButton.addEventListener("click", () => {
+    console.log("f")
+    buyPopUp.style.display = "flex";
+    buyPopUpFilter.style.display = "flex";
+})
