@@ -56,31 +56,33 @@
                 </div>
         
                 <form id="formulario" onsubmit=" return validarFormulario()">
-                    <label for="inputNombre" class="form-label">Nombre</label>
+                    <label for="inputNombre" class="form-label text-kanit">Nombre</label>
                     <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre" required>
                     
-                    <label for="inputApellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su Apellido" required>
+                    <label for="inputApellido" class="form-label text-kanit">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su apellido" required>
                     
-                    <label for="dni">DNI:</label>
+                    <label for="dni" class="form-label text-kanit">DNI:</label>
                     <input type="number" class="form-control" name="dni" id="dni" placeholder="DNI sin puntos" length=8 pattern=[0-9] required> 
                     
-                    <label for="inputDomicilio" class="form-label">Domicilio</label>
-                    <input type="text" class="form-control" id="inputDomicilio" placeholder="25 de Mayo 1520" required>
+                    <label for="inputDomicilio" class="form-label text-kanit">Domicilio</label>
+                    <input type="text" class="form-control" id="inputDomicilio" placeholder="Ej.: 25 de Mayo 1520" required>
                     
-                    <label for="inputProvincia" class="form-label">Provincia</label>
-                    <input type="text" class="form-control" id="inputProvincia" placeholder="Buenos Aires" required>
+                    <label for="inputProvincia" class="form-label text-kanit">Provincia</label>
+                    <input type="text" class="form-control" id="inputProvincia" placeholder="Ej.: Buenos Aires" required>
                     
-                    <label for="inputLocalidad" class="form-label">Localidad</label>
-                    <input type="text" class="form-control" id="inputLocalidad" placeholder="Palermo" required>
+                    <label for="inputLocalidad" class="form-label text-kanit">Localidad</label>
+                    <input type="text" class="form-control" id="inputLocalidad" placeholder="Ej.: Palermo" required>
                     
-                        <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="mail@mail.com" required>
+                    <label for="inputEmail4" class="form-label text-kanit">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ej.: person@example.com" required>
                     
-                    <label for="inputPassword4" class="form-label">Password</label>
+                    <label for="inputPassword4" class="form-label text-kanit">Password</label>
                     <input type="password" class="form-control" id="inputPassword4" required>
                     
-                    <input type="submit" value="Enviar">
+                    <div class="submit-cont">
+                        <input type="submit" class="submit-btn" value="Enviar">
+                    </div>
                 </form>
             </div>
 

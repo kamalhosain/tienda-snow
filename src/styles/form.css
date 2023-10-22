@@ -52,6 +52,10 @@ form {
     border-radius: 5px;
 }
 
+.form-label {
+    display: block;
+}
+
 
 input[type="text"],
 input[type="email"],
@@ -64,4 +68,14 @@ textarea {
     margin-bottom: 10px;
     border: 1px solid #cccccc;
     border-radius: 5px;
+}
+
+.submit-cont {
+    width: 100%;
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
